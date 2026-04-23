@@ -1,37 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Gonçalo Cabral | Portfolio</title>
-    <style>
-        body {
-            font-family: Arial;
-            margin: 40px;
-            background-color: #0f172a;
-            color: white;
-        }
-        h1 { color: #38bdf8; }
-        .project {
-            border: 1px solid #334155;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-        a { color: #38bdf8; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gonçalo Cabral | Portfolio</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        background: #0f172a;
+        color: #e2e8f0;
+    }
+
+    header {
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+        color: #38bdf8;
+    }
+
+    h2 {
+        color: #38bdf8;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #94a3b8;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .links a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #38bdf8;
+        font-weight: bold;
+    }
+
+    section {
+        padding: 40px 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: #1e293b;
+        padding: 20px;
+        border-radius: 15px;
+        transition: 0.3s;
+        border: 1px solid #334155;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        border-color: #38bdf8;
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .card h3 {
+        margin: 0 0 10px;
+    }
+
+    .card a {
+        display: inline-block;
+        margin-top: 10px;
+        color: #38bdf8;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px;
+        color: #64748b;
+    }
+</style>
 </head>
+
 <body>
 
-<h1>Gonçalo Cabral</h1>
-<p>Software Developer | Networking & Cybersecurity</p>
+<header>
+    <h1>Gonçalo Cabral</h1>
+    <p>Software Developer focused on Networking & Cybersecurity</p>
 
-<h2>Projects</h2>
+    <div class="links">
+        <a href="https://github.com/goncalocabral-hub">GitHub</a>
+        <a href="https://www.linkedin.com/in/gon%C3%A7alo-cabral-016498304/">LinkedIn</a>
+    </div>
+</header>
 
-<div class="project">
-    <h3>Network Device Monitoring Application</h3>
-    <p>Multi-protocol network scanner with Shadow IT detection.</p>
-    <a href="https://github.com/goncalocabral-hub">View on GitHub</a>
-</div>
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am a Software Developer with a strong interest in networking and cybersecurity. 
+        I focus on building practical, real-world solutions involving network monitoring, 
+        system integration, and security analysis.
+    </p>
+</section>
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>Network Device Monitoring Application</h3>
+            <p>
+                Multi-protocol network scanner supporting BLE, Wi-Fi, LAN, BACnet/IP
+                and Modbus TCP, with Shadow IT detection and real-time monitoring.
+            </p>
+            <a href="https://github.com/goncalocabral-hub/Network-device-scanner-">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>TCP Server for TWIG Devices</h3>
+            <p>
+                Custom TCP server handling real-time alarm messages from devices,
+                including simulation tools for testing.
+            </p>
+            <a href="https://github.com/goncalocabral-hub/ProgramaDispositivo1">View Project →</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Gonçalo Cabral
+</footer>
 
 </body>
 </html>
